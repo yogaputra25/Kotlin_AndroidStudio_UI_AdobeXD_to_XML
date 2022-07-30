@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpYou">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="335dp"
+        android:layout_height="156dp"
+        android:text="It seems as this is your first time using our app, please enter your location so we can filter our results and stock accordingly to your local store.  \n \n If you choose to skip, you can change your location at any time in your account settings."
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/back_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Help Us Help You"
+        android:textColor="#0C0C0C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.527">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="335dp"
+            android:layout_height="56dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_form"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="40px"
+            android:text="State" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/text_form"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="40px"
+            android:text="City" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textColor="#5ABD8C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
